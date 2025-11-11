@@ -18,7 +18,7 @@ logic. If not provided, will use default settings.
 ```ts
 let searchResults: string[] = fuzzySearch(searchString, items);
 
------------------------------ OR -----------------------------
+/*----------------------------- OR -----------------------------*/
 
 let fuzzyMatchSettings = new FuzzyMatchSettings(...);
 let searchResults: string[] = fuzzySearch(searchString, items, fuzzyMatchSettings);
@@ -45,7 +45,7 @@ logic. If not provided, will use default settings.
 ```ts
 let searchResults: T[] = fuzzySearchByProperty(searchString, items, "property_name");
 
------------------------------------------- OR -----------------------------------------------
+/*------------------------------------------ OR -----------------------------------------------*/
 
 let fuzzyMatchSettings = new FuzzyMatchSettings(...);
 let searchResults: T[] = fuzzySearchByProperty(searchString, items, "property_name", fuzzyMatchSettings);
@@ -63,7 +63,7 @@ customize how the implementation will perform the search.
 ```ts
 let fuzzyMatchSettings = new FuzzyMatchSettings();
 
----------------------- OR ------------------------
+/*---------------------- OR ------------------------*/
 
 let fuzzyMatchSettings = new FuzzyMatchSettings(
     minimum_length_for_search,
